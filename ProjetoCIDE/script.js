@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+    // --- LÓGICA DO MENU INICIAL ---
+    document.getElementById('btn-novo-jogo').addEventListener('click', () => {
+        // Esconde a div inteira do menu
+        document.getElementById('start-menu').style.display = 'none'; 
+    });
+
+    document.getElementById('btn-como-jogar').addEventListener('click', () => {
+        // Mostra a janela de instruções
+        document.getElementById('instructions-modal').style.display = 'block';
+    });
+
+    document.getElementById('btn-fechar-instrucoes').addEventListener('click', () => {
+        // Esconde a janela de instruções e volta para o menu
+        document.getElementById('instructions-modal').style.display = 'none';
+    });
+
+    // ... O resto do seu script continua normal aqui (const base = [...], etc.)
+    
     // 1. Gera 4 números aleatórios entre 1 e 10 para a base
     const base = [
         Math.floor(Math.random() * 10) + 1, //[cite: 1]
