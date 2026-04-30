@@ -8,6 +8,26 @@
 <body>
 
 <div id="game-container">
+    
+    <!-- 1. CAMADA DO MENU INICIAL -->
+    <div id="start-menu">
+        <h1 class="game-title">Operação Pirâmide</h1>
+        <h2 class="game-subtitle">Uma aventura matemática</h2>
+        <div class="menu-buttons">
+            <button id="btn-novo-jogo">Novo Jogo</button>
+            <button id="btn-como-jogar">Como Jogar</button>
+        </div>
+    </div>
+
+    <!-- 2. CAMADA DE INSTRUÇÕES (Oculta por padrão) -->
+    <div id="instructions-modal">
+        <h2>COMO JOGAR</h2>
+        <p>A múmia despertou e está perseguindo nosso aventureiro!</p>
+        <p>Para ajudá-lo a escalar a pirâmide, use seus conhecimentos matemáticos para preencher os blocos vazios. Acerte a soma dos blocos de baixo para ajudar o aventureiro a subir.</p>
+        <p>Se você errar 3 vezes, a múmia irá pegá-lo. CORRA!</p>
+        <button id="btn-fechar-instrucoes">Entendi!</button>
+    </div>
+
     <!-- Cabeçalho -->
     <div id="ui-header">
         <h1>OPERAÇÃO PIRÂMIDE: FUJA DO VILÃO!</h1>
