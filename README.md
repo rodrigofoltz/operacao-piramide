@@ -6,7 +6,7 @@
 
 **Operação Pirâmide** é um jogo de raciocínio lógico e matemático desenvolvido para navegadores. O jogador assume o papel de um aventureiro que precisa escalar uma pirâmide milenar resolvendo equações de soma antes que o tempo acabe e a múmia o alcance.
 
-🎮 **[Jogue agora direto no navegador!] [https://rodrigofoltz.github.io/operacao-piramide/ProjetoCIDE/)](https://rodrigofoltz.github.io/operacao-piramide/]**
+🎮 **[Jogue agora direto no navegador!] [(https://rodrigofoltz.github.io/operacao-piramide/]**
 
 ---
 
