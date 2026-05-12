@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         villain.style.left = (posX + villainStepX) + 'px';
     }
 
-    function triggerGameOver(alertMsg) {
+        function triggerGameOver(alertMsg) {
         clearInterval(timerInterval);
         document.querySelectorAll('.block input').forEach(inp => inp.disabled = true);
 
@@ -70,12 +70,18 @@ document.addEventListener("DOMContentLoaded", () => {
         villain.style.left = adventurer.style.left;
 
         setTimeout(() => { 
-            document.querySelectorAll('.block input').forEach(inp => inp.style.display = 'none');
+            // Esconde todas as caixas de número para não vazarem por cima do ecrã vermelho
+            document.querySelectorAll('.block input').forEach(inp => {
+                inp.style.display = 'none';
+                inp.parentElement.classList.remove('bloco-acerto', 'bloco-erro');
+            });
+            
             document.getElementById('btn-hamburger').style.display = 'none';
             document.getElementById('game-over-screen').style.display = 'flex';
             if(alertMsg) alert(alertMsg);
         }, 600); 
     }
+
 
     /**
      * Game Initialization
